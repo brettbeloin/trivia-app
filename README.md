@@ -67,13 +67,13 @@ trivia-app/
 ```
 
 ## Build Steps (from JavaFX version)
-1. -[ ] Setup raylib - render basic window
-2. -[ ] Fetch trivia from API (HTTP + cJSON)
-3. -[ ] Connect to MongoDB
-4. -[ ] Store questions in database
-5. -[ ] Display questions in UI
-6. -[ ] Validate answers with regex
-7. -[ ] Add unit tests with munit
+-[ ] Setup raylib - render basic window
+-[ ] Fetch trivia from API (HTTP + cJSON)
+-[ ] Connect to MongoDB
+-[ ] Store questions in database
+-[ ] Display questions in UI
+-[ ] Validate answers with regex
+-[ ] Add unit tests with munit
 
 ## Notes
 - MongoDB target: `mongoc::mongoc` (not mongo::mongoc_shared)
