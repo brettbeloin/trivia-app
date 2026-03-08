@@ -11,8 +11,8 @@ int main(void) {
 
   while (!WindowShouldClose()) {
     BeginDrawing();
-    ClearBackground(RAYWHITE);
-    DrawText(text, x, y, font_size, BLACK);
+    ClearBackground(BLACK);
+    DrawText(text, x, y, font_size, WHITE);
     EndDrawing();
   }
 
