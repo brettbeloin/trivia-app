@@ -3,6 +3,23 @@ project(trivia_app C)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_C_STANDARD 11)
+# Compiler warnings and flags
+if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+    add_compile_options(
+        -Wall
+        -Wextra
+        -Werror
+        -Wpedantic
+        -Wformat=2
+        -Wformat-security
+        -Wnull-dereference
+        -Wstack-protector
+        -Wstrict-overflow=3
+        -Warray-bounds=2
+        -Wconversion
+        -Wshadow
+    )
+endif()
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(RAYLIB REQUIRED raylib)

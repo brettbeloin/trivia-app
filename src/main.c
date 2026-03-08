@@ -1,7 +1,7 @@
 #include "window.h"
 #include <raylib.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
   InitWindow(width, height, "Trivia App");
   SetTargetFPS(60);
 
