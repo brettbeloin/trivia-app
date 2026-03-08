@@ -1,5 +1,6 @@
 # Build directory - contains compiled binaries and CMake cache
 build/
+.cache/
 
 # vcpkg installed packages - can be reinstalled from vcpkg
 vcpkg_installed/
