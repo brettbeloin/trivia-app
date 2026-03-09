@@ -1,21 +1,14 @@
-#include "window.h"
-#include <raylib.h>
+#include <window.h>
 
 int main(void) {
-  InitWindow(width, height, "Trivia App");
-  SetTargetFPS(60);
+  window win = {
+      .title = "Triva App",
+      .text = "Triva Game",
+      .font_size = 20,
+      .height = 800,
+      .width = 800,
+  };
 
-  text_width = MeasureText(text, font_size);
-  int x = (width - text_width) / 2;
-  int y = height / 2;
-
-  while (!WindowShouldClose()) {
-    BeginDrawing();
-    ClearBackground(BLACK);
-    DrawText(text, x, y, font_size, WHITE);
-    EndDrawing();
-  }
-
-  CloseWindow();
+  create_window(win);
   return 0;
 }

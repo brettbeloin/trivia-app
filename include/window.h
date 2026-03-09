@@ -1,8 +1,14 @@
-#pragma once
+#ifndef window_h
+#define window_h
 
-const char *text = "Hello Trivia";
-int font_size = 20;
-int text_width;
+typedef struct {
+  char *text;
+  char *title;
+  int font_size;
+  int height;
+  int width;
+} window;
 
-int height = 800;
-int width = 800;
+void create_window(window);
+
+#endif

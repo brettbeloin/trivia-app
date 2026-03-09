@@ -27,7 +27,7 @@ pkg_check_modules(RAYLIB REQUIRED raylib)
 find_package(cJSON CONFIG REQUIRED)
 find_package(mongoc CONFIG REQUIRED)
 
-add_executable(trivia_app src/main.c)
+add_executable(trivia_app src/main.c src/window.c)
 target_include_directories(trivia_app PRIVATE include)
 
 target_link_libraries(trivia_app PRIVATE
