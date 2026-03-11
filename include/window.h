@@ -9,6 +9,6 @@ typedef struct {
   int width;
 } window;
 
-void create_window(window);
+void create_window(const window *win);
 
 #endif

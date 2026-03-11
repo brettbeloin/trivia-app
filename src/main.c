@@ -9,6 +9,6 @@ int main(void) {
       .width = 800,
   };
 
-  create_window(win);
+  create_window(&win);
   return 0;
 }
